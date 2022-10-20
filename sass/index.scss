@@ -66,10 +66,12 @@ form {
 }
 
 .org-specs {
-  .label {
-    display: inline-block;
-    width: 200px;
-    padding-right: 1rem;
+  > div:not(:last-child) {
+    .label {
+      display: inline-block;
+      width: 200px;
+      padding-right: 1rem;
+    }
   }
 }
 // .control {

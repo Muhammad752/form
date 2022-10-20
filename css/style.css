@@ -73,7 +73,7 @@ form {
   margin: auto;
 }
 
-.org-specs .label {
+.org-specs > div:not(:last-child) .label {
   display: inline-block;
   width: 200px;
   padding-right: 1rem;
