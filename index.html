@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>продаже автозапчастей</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="head">Регистрация</h2>
+      <form action="#">
+        <section class="whois">
+          <h2>Вы регистрируетесь как</h2>
+
+          <div class="field">
+            <label class="label" for="customer">Покупатель </label>
+            <input type="radio" name="type" id="customer" value="customer" />
+          </div>
+
+          <div class="field">
+            <label class="label" for="courier">Поставщик </label>
+            <input type="radio" name="type" id="courier" value="courier" />
+          </div>
+        </section>
+        <section>
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label" for="email">Эл. почта</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control is-expanded">
+                  <input class="input" type="email" id="email" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section__top">Название организации</h2>
+
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <label class="label" for="org-type">ИП или Юр.лицо</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input
+                    class="input"
+                    type="text"
+                    name="org-type"
+                    id="org-type"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <label class="label" for="inn">ИНН</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" id="inn" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section__top">Фактический адрес</h2>
+
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <label class="label" for="city">Ваш город</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" id="city" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field address">
+            <div>
+              <label class="label" for="street">Улица</label>
+              <div class="control">
+                <input class="input" type="text" name="street" id="street" />
+              </div>
+            </div>
+
+            <div>
+              <label class="label" for="home">дом/стр.</label>
+              <div class="control">
+                <input class="input" type="text" id="home" />
+              </div>
+            </div>
+
+            <div>
+              <label class="label" for="office">Офис</label>
+              <div class="control">
+                <input class="input" type="text" id="office" />
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <label class="label" for="tel">Телефон</label>
+            </div>
+            <div class="field-body">
+              <div class="field has-addons">
+                <div class="control">
+                  <select class="button is-static" name="" id="">
+                    <option>+7</option>
+                  </select>
+                </div>
+                <div class="control">
+                  <input class="input" type="tel" name="tel" id="tel" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <label class="label" for="site"
+                >Сайт&nbsp;Вашей&nbsp;компании</label
+              >
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="url" name="" id="site" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="org-specs">
+          <h2 class="section__top">Виды деятельности</h2>
+
+          <div>
+            <label class="label" for="shop">Магазин</label>
+            <input type="checkbox" name="" id="shop" />
+          </div>
+
+          <div>
+            <label class="label" for="regional">Региональная </label>
+            <input type="checkbox" name="" id="regional" />
+          </div>
+
+          <div>
+            <label class="label" for="federal">Федеральная </label>
+            <input type="checkbox" name="" id="federal" />
+          </div>
+
+          <div>
+            <label class="label" for="net">Интернет-магазин</label>
+            <input type="checkbox" name="" id="net" />
+          </div>
+
+          <div>
+            <label class="label" for="autoService">Автосервис</label>
+            <input type="checkbox" name="" id="autoService" />
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <label class="label" for="other">Прочее</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" id="other" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <button type="submit" class="button is-info">Отправить заявку</button>
+      </form>
+    </div>
+  </body>
+</html>
