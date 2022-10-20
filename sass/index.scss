@@ -64,6 +64,14 @@ form {
   width: 95%;
   margin: auto;
 }
+
+.org-specs {
+  .label {
+    display: inline-block;
+    width: 200px;
+    padding-right: 1rem;
+  }
+}
 // .control {
 //   width: fit-content;
 //   display: inline-block;
